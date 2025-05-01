@@ -7,6 +7,10 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
   </head>
   <body>
     <!-- Navbar -->
@@ -20,7 +24,9 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Brand</a>
+          <a class="navbar-brand" href="#">
+            <img src="images/favicon-32x32.png">
+          </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -64,8 +70,15 @@
       </div><!-- /.container-fluid -->
     </nav>
     <!-- End Navbar -->
-    <h1>Hello, world!</h1>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>This my Swatch collection</h1>
+        <p>...</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">About me</a></p>
+      </div>
+    </div>
 
+    <!-- Product Gallery -->
      <div class="container">
         <!-- Title Row -->
         <div class="row">
@@ -86,7 +99,7 @@
         </div>
         </br>
 
-    <!-- Gallery Items Row -->
+        <!-- Gallery Items Row -->
         <div class="row flex-row">
           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter thumb SE">
             <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="HOW MAJESTIC" data-caption="Featured on a clear dial with white and gold-colored print, this Gent watch features 70 gold-colored dots to mark the Queen's 70 year reign. The centerpiece of this watch is the color-changing calendar wheel that changes the Queen's outfit color daily. This watch is complimented by the solid matte white case and silicone strap, complete with Anodamazing effect. Also included in its special sleeve packaging is a unique surprise – a sparkly silver-colored paper crown.Model: GZ711" data-image="images/how-majestic.avif" data-target="#image-gallery">
@@ -162,7 +175,7 @@
       </div>
     </div>
 
-<!-- Modal -->
+    <!-- Modal -->
     <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -202,9 +215,6 @@
                          Product family: ORIGINALS</br>
                          </p>
                       </div>
-<!--                     <div class="col-md-12 text-justify" id="image-gallery-caption">
-                        This text will be overwritten by jQuery
-                    </div> -->
                 </div>
             </div>
         </div>
