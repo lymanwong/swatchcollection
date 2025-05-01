@@ -83,3 +83,7 @@
   width: 100%;
   height: auto;
 }
+
+.leftalign {
+    text-align: left;
+}
