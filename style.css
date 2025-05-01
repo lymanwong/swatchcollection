@@ -1,4 +1,4 @@
-
+/* Gallery */
 .gallery-title
 {
     font-size: 36px;
@@ -49,4 +49,37 @@
 .gallery_product
 {
     margin-bottom: 30px;
+}
+
+/* Modal */
+.btn:focus, .btn:active, button:focus, button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#image-gallery .modal-footer{
+  display: block;
+}
+
+.thumb{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* Enable Flexbox for dynamic wrapping */
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Override Bootstrap's float-based grid for gallery items */
+.flex-row .gallery_product {
+  float: none; /* Disable floats */
+  display: flex; /* Optional: Align thumbnails neatly */
+}
+
+/* Optional: Ensure images fill their containers */
+.flex-row .thumbnail img {
+  width: 100%;
+  height: auto;
 }
