@@ -65,8 +65,10 @@ $(document).ready(function(){
         function updateGallery(selector) {
             var $sel = selector;
             current_image = $sel.data('image-id');
-            $('#image-gallery-caption').text($sel.data('caption'));
-            $('#image-gallery-title').text($sel.data('title'));
+            $('#image-gallery-description').html($sel.data('description'));
+            $('#image-gallery-features').html($sel.data('features'));
+            $('#image-gallery-specifications').html($sel.data('specifications'));
+            $('#image-gallery-title').html($sel.data('title'));
             $('#image-gallery-image').attr('src', $sel.data('image'));
             disableButtons(counter, $sel.data('image-id'));
         }
@@ -98,3 +100,20 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.classList.add("w3-light-grey");
 }
+
+// When the modal is shown
+$('#image-gallery').on('show.bs.modal', function (event) {
+  const trigger = $(event.relatedTarget); // Clicked thumbnail
+  const title = trigger.data('title');
+  const description = trigger.data('description');
+  const features = trigger.data('features');
+  const specifications = trigger.data('specifications');
+
+  // Update modal content
+  $('#image-gallery-title').html(title);
+  $('#image-gallery-description').html(description);
+
+  // Handle line breaks for features/specifications
+  $('#image-gallery-features').html(features.replace(/\n/g, '<br>'));
+  $('#image-gallery-specifications').html(specifications.replace(/\n/g, '<br>'));
+});

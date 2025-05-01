@@ -87,3 +87,9 @@
 .leftalign {
     text-align: left;
 }
+
+/* For the Features/Specifications sections */
+#image-gallery-features,
+#image-gallery-specifications {
+  white-space: normal; /* Override any conflicting styles */
+}
