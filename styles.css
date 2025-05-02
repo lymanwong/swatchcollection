@@ -1,0 +1,33 @@
+.padtop {
+	padding: 1% 0;
+}
+
+.obfit {
+	object-fit: cover;
+	height: 800px;
+}
+
+.cardimgresize {
+	height: 20em;
+	object-fit: cover;
+}
+
+.titlecenter {
+	text-align: center;
+	padding: .5em 0;
+}
+
+.invis {
+	background-color: white;
+	border: none;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.deco {
+	color: white;
+	background: black;
+	border-radius: 20%;
+}
