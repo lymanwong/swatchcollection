@@ -151,3 +151,30 @@ body {
 .navbar-default {
     background-color: #9FB3DF;
 }
+
+.square-container {
+  position: absolute;
+  top: 20px;  /* Adjust spacing from top */
+  right: 20px; /* Adjust spacing from right */
+  width: 150px; /* Adjust size as needed */
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%; /* Optional rounded corners */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional shadow */
+  z-index: 1; /* Ensure it stays above other content */
+}
+
+.cropped-square {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.jumbotron {
+  position: relative; /* Needed for absolute positioning of child */
+  padding-right: 140px; /* Make space for the image */
+}
+
+.jumbotron h1 {
+  margin-right: 120px; /* Prevent text overlap */
+}
