@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Marssy's Swatch Collction</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <title>Marssy's Swatch Collection</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="styles.css"/>
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
@@ -14,268 +15,366 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+    <nav class="navbar navbar-default">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="images/favicon-32x32.png">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="https://swatchcollection.onrender.com/">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://swatchcollection.onrender.com/collection">Collection</a>
-            </li>
-<!--             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li> -->
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- End Navbar -->
-
-  <!-- Carousel -->
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="true">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="images/marssyswatch.jpeg" class="d-block w-100 obfit" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="images/marssypallela.jpeg" class="d-block w-100 obfit" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="images/marssybluey.jpeg" class="d-block w-100 obfit" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-<!-- End Carousel -->
-
-<!-- Latest Additions Cards Start -->
-  <div class="container padtop">
-    <h2 class="titlecenter">Latest Additions</h2>
-    <div class="row row-cols-1 row-cols-sm-4 g-4">
-      <div class="col">
-        <div class="card h-100 invis">
-          <img src="images/how-majestic.avif" class="card-img-top cardimgresize" alt="...">
-          <div class="card-body text-center">
-              <button class="card-title deco">New</button>
-              <p class="card-text text-center">Watch Name</p>
-          </div>
-          <div class="card-footer invis text-center">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 invis">
-          <img src="images/how-majestic.avif" class="card-img-top cardimgresize" alt="...">
-          <div class="card-body text-center">
-            <button class="card-title deco text-center">New</button>
-            <p class="card-text text-center">Watch Name</p>
-          </div>
-          <div class="card-footer invis text-center">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 invis">
-          <img src="images/how-majestic.avif" class="card-img-top cardimgresize" alt="...">
-          <div class="card-body text-center">
-            <button class="card-title deco">New</button>
-            <p class="card-text text-center">Watch Name</p>
-          </div>
-          <div class="card-footer invis text-center">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 invis">
-          <img src="images/how-majestic.avif" class="card-img-top cardimgresize" alt="...">
-          <div class="card-body text-center">
-            <button class="card-title deco">New</button>
-            <p class="card-text text-center">Watch Name</p>
-          </div>
-          <div class="card-footer invis text-center">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </div>
-<!-- Latest Additions Cards End -->
-
-<!-- Favorite Swatches Cards Start -->
-  <div class="container padtop">
-    <h2 class="titlecenter">Favorite Swatches</h2>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="col">
-        <div class="card h-100 invis">
-          <img src="images/how-majestic.avif" class="card-img-top cardimgresize" alt="...">
-          <div class="card-body">
-            <h5 class="card-title text-center">Watch Name</h5>
-            <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
-          </div>
-          <div class="card-footer invis text-center">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 invis">
-          <img src="images/how-majestic.avif" class="card-img-top cardimgresize" alt="...">
-          <div class="card-body">
-            <h5 class="card-title text-center">Watch Name</h5>
-            <!-- <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p> -->
-          </div>
-          <div class="card-footer invis text-center">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 invis">
-          <img src="images/how-majestic.avif" class="card-img-top cardimgresize" alt="...">
-          <div class="card-body">
-            <h5 class="card-title text-center">Watch Name</h5>
-            <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p> -->
-          </div>
-          <div class="card-footer invis text-center">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </div>
-<!-- Favorite Swatches Cards End -->
-
-<!-- My World Start -->
-  <div class="container padtop">
-    <h2 class="titlecenter">My World</h2>
-    <div class="row row-cols-1 row-cols-sm-4 g-4">
-      <div class="col">
-        <div class="card h-100 invis">
-          <img src="images/marssyround1.jpeg" class="card-img-top cardimgresize" alt="...">
-<!--           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div> -->
-          <div class="card-footer invis text-center">
-            <small class="text-body-secondary">My Round1 Haul</small>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 invis">
-          <img src="images/marssypallela.jpeg" class="card-img-top cardimgresize" alt="...">
-<!--           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          </div> -->
-          <div class="card-footer invis text-center">
-            <small class="text-body-secondary">Making Pallela</small>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 invis text-center">
-          <img src="images/marssy9ers.jpeg" class="card-img-top cardimgresize" alt="...">
-<!--           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          </div> -->
-          <div class="card-footer invis text-center">
-            <small class="text-body-secondary">Go Niners!</small>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 invis text-center">
-          <img src="images/marssyswatch.jpeg" class="card-img-top cardimgresize" alt="...">
-          <!-- <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          </div> -->
-          <div class="card-footer invis text-center">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </div>
-<!-- My World End -->
-
-<!-- Start Footer -->
-    <footer class="footer">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-fixed-bottom">
-        <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
           <a class="navbar-brand" href="#">
             <img src="images/favicon-32x32.png">
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="https://swatchcollection.onrender.com/">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://swatchcollection.onrender.com/collection">Collection</a>
-              </li>
-  <!--        <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li> -->
-            </ul>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="https://swatchcollection.onrender.com/">Home</a></li>
+            <li class="active"><a href="https://swatchcollection.onrender.com/collection">Collection <span class="sr-only">(current)</span></a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Product Gallery -->
+     <div class="container bottom-pad">
+        <!-- Title Row -->
+        <div class="row">
+          <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <h1 class="gallery-title">Gallery</h1>
           </div>
         </div>
+
+      <!-- Filter Buttons Row -->
+        <div align="col-xs-12 text-center" class="row flex-row" style="display: flex; flex-wrap: wrap;">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+              <button class="btn btn-default filter-button" data-filter="all">All</button>
+              <button class="btn btn-default filter-button" data-filter="80">80's</button>
+              <button class="btn btn-default filter-button" data-filter="90">90's</button>
+              <button class="btn btn-default filter-button" data-filter="2k">2000's</button>
+              <button class="btn btn-default filter-button" data-filter="Moon">Moonswatch</button>
+              <button class="btn btn-default filter-button" data-filter="SE">Special Editions</button>
+          </div>
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+              <button class="btn btn-default filter-button" data-filter="BB">Big Bold</button>
+              <button class="btn btn-default filter-button" data-filter="Maxi">Maxi</button>
+              <button class="btn btn-default filter-button" data-filter="OG">Originals</button>
+              <button class="btn btn-default filter-button" data-filter="Skin">Skin</button>
+              <button class="btn btn-default filter-button" data-filter="Sis">Sistem51</button>
+          </div>
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+              <button class="btn btn-default filter-button" data-filter="Bio">Bioceramic</button>
+              <button class="btn btn-default filter-button" data-filter="BT">Blossom Time</button>
+              <button class="btn btn-default filter-button" data-filter="BF">Break Free</button>
+              <button class="btn btn-default filter-button" data-filter="ESS">Essentials</button>
+              <button class="btn btn-default filter-button" data-filter="Neon">Neon</button>
+              <button class="btn btn-default filter-button" data-filter="Simpsons">Simpsons</button>
+          </div>
+        </div>
+        </br>
+
+        <!-- Gallery Items Row -->
+        <div class="row flex-row">
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter thumb SE">
+            <a class="thumbnail"
+              href="#"
+              data-image-id=""
+              data-toggle="modal"
+              data-title="HOW MAJESTIC"
+              data-description="<br>
+              Featured on a clear dial with white and gold-colored print, this Gent watch features 70 gold-colored dots to mark the Queen's 70 year reign. The centerpiece of this watch is the color-changing calendar wheel that changes the Queen's outfit color daily. This watch is complimented by the solid matte white case and silicone strap, complete with Anodamazing effect. Also included in its special sleeve packaging is a unique surprise – a sparkly silver-colored paper crown.<br><br>
+              Model: <a target='_blank' class='a-style' href='https://www.swatch.com/en-en/how-majestic-gz711/GZ711.html'>GZ711</a><br>
+              Release date: November 2022"
+              data-features="
+              Movement: Quartz
+              Water resistant: 3 Bar
+              Collection Category: JUBILEE
+              Packaging type: Special"
+              data-specifications="
+              Diameter: 34.00 mm
+              Thickness: 8.75 mm
+              Collection Category: JUBILEE
+              Product family: ORIGINALS"
+              data-image="images/how-majestic.avif"
+              data-target="#image-gallery">
+              <img src="images/how-majestic.avif" class="img-responsive">
+            </a>
+          </div>
+
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter thumb SE 2k">
+            <a class="thumbnail"
+              href="#"
+              data-image-id=""
+              data-toggle="modal"
+              data-title="GOLDEN RED BAMBOO"
+              data-description="<br>
+              This ultra-slim watch is dedicated to the Year of the Snake. It features a sun-brushed gold-colored dial with multi-colored print and orange hour and minute hands that glow in the dark. The shiny stainless steel case with gold-colored PVD coating is paired with an ivory-colored leather and textile strap with orange embroidery and gold-colored print. An ivory-colored leather and textile loop and a shiny stainless steel buckle with gold-colored PVD coating complete the watch.<br><br>
+              Model: <a target='_blank' class='a-style' href='https://www.swatch.com/en-en/golden-red-bamboo-syxz105/SYXZ105.html'>SYXZ105</a><br>
+              Release date: December 2024"
+              data-features="
+              Movement: Quartz
+              Water resistant: 3 Bar
+              Collection Category: YEAR OF THE SNAKE
+              Packaging type: Special"
+              data-specifications="
+              Diameter: 38.00 mm
+              Thickness: 5.80 mm
+              Collection Category: YEAR OF THE SNAKE
+              Product family: SKIN"
+              data-image="images/golden-red-bamboo.avif"
+              data-target="#image-gallery">
+              <img src="images/golden-red-bamboo.avif" class="img-responsive">
+            </a>
+          </div>
+
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter thumb 2k SE BB">
+            <a class="thumbnail"
+              href="#"
+              data-image-id=""
+              data-toggle="modal"
+              data-title="IT'S SPOOKY TIME"
+              data-description="<br>
+              IT'S SPOOKY TIME! Our BIG BOLD BIOCERAMIC Halloween watch makes the perfect Halloween party outfit accessory. A special calendar wheel mechanism lets the googly eyes make the craziest faces behind the biosourced glass.<br><br>
+              Model: <a target='_blank' class='a-style' href='https://www.swatch.com/en-en/it-s-spooky-time-sb03b700/SB03B700.html'>SB03B700</a><br>
+              Release date: 2023"
+              data-features="
+              Movement: Quartz
+              Water resistant: 3 Bar
+              Collection Category: HALLOWEEN
+              Packaging type: Special"
+              data-specifications="
+              Diameter: 47.00 mm
+              Thickness: 11.75 mm
+              Collection Category: HALLOWEEN
+              Product family: BIG BOLD"
+              data-image="images/its-spooky-time.avif"
+              data-target="#image-gallery">
+              <img src="images/its-spooky-time.avif" class="img-responsive">
+            </a>
+          </div>
+
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter thumb SE 2k Simpsons">
+            <a class="thumbnail"
+            href="#"
+            data-image-id=""
+            data-toggle="modal"
+            data-title="SECONDS OF SWEETNESS"
+            data-description="<br>
+            Part of the Simpsons collaboration collection, this colorful watch features a donut-printed dial in a matte yellow biosourced case with biosourced glass and matching frosting-printed strap. TM & © 20th Television. Matt Groening<br><br>
+            Model: <a target='_blank' class='a-style' href='https://www.swatch.com/en-en/seconds-of-sweetness-so29z134/SO29Z134.html'>SO29Z134</a><br>
+            Release date: 2023"
+            data-features="
+            Movement: Quartz
+            Water resistant: 3 Bar
+            Collection Category: THE SIMPSONS COLLECTION
+            Packaging type: Special"
+            data-specifications="
+            Diameter: 41.00 mm
+            Thickness: 9.85 mm
+            Product family: ORIGINALS"
+            data-image="images/seconds-of-sweetness.avif"
+            data-target="#image-gallery">
+              <img src="images/seconds-of-sweetness.avif" class="img-responsive">
+            </a>
+          </div>
+
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter thumb spray">
+            <a class="thumbnail"
+            href="#"
+            data-image-id=""
+            data-toggle="modal"
+            data-title="This is my title"
+            data-description="Some exmaple text"
+            data-features=""
+            data-specifications=""
+            data-image="images/seconds-of-sweetness.avif"
+            data-target="#image-gallery">
+              <img src="images/seconds-of-sweetness.avif" class="img-responsive">
+            </a>
+          </div>
+
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter thumb spray">
+            <a class="thumbnail"
+            href="#" data-image-id=""
+            data-toggle="modal"
+            data-title="This is my title"
+            data-description="Some exmaple text"
+            data-features=""
+            data-specifications=""
+            data-image="images/seconds-of-sweetness.avif"
+            data-target="#image-gallery">
+              <img src="images/seconds-of-sweetness.avif" class="img-responsive">
+            </a>
+          </div>
+
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter thumb spray">
+            <a class="thumbnail"
+            href="#"
+            data-image-id=""
+            data-toggle="modal"
+            data-title="This is my title"
+            data-description="Some exmaple text"
+            data-features=""
+            data-specifications=""
+            data-image="images/seconds-of-sweetness.avif"
+            data-target="#image-gallery">
+              <img src="images/seconds-of-sweetness.avif" class="img-responsive">
+            </a>
+          </div>
+
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter thumb spray">
+            <a class="thumbnail"
+            href="#"
+            data-image-id=""
+            data-toggle="modal"
+            data-title="This is my title"
+            data-description="Some exmaple text"
+            data-features=""
+            data-specifications=""
+            data-image="images/seconds-of-sweetness.avif"
+            data-target="#image-gallery">
+              <img src="images/seconds-of-sweetness.avif" class="img-responsive">
+            </a>
+          </div>
+
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter thumb spray">
+            <a class="thumbnail"
+            href="#"
+            data-image-id=""
+            data-toggle="modal"
+            data-title="This is my title"
+            data-description="Some exmaple text"
+            data-features=""
+            data-specifications=""
+            data-image="images/seconds-of-sweetness.avif"
+            data-target="#image-gallery">
+              <img src="images/seconds-of-sweetness.avif" class="img-responsive">
+            </a>
+          </div>
+
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter thumb spray">
+            <a class="thumbnail"
+            href="#"
+            data-image-id=""
+            data-toggle="modal"
+            data-title="This is my title"
+            data-description="Some exmaple text"
+            data-features=""
+            data-specifications=""
+            data-image="images/seconds-of-sweetness.avif"
+            data-target="#image-gallery">
+              <img src="images/seconds-of-sweetness.avif" class="img-responsive">
+            </a>
+          </div>
+
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter thumb spray">
+            <a class="thumbnail"
+            href="#"
+            data-image-id=""
+            data-toggle="modal"
+            data-title="This is my title"
+            data-description="Some exmaple text"
+            data-features=""
+            data-specifications=""
+            data-image="images/seconds-of-sweetness.avif"
+            data-target="#image-gallery">
+              <img src="images/seconds-of-sweetness.avif" class="img-responsive">
+            </a>
+          </div>
+
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter thumb spray">
+            <a class="thumbnail"
+            href="#"
+            data-image-id=""
+            data-toggle="modal"
+            data-title="This is my title"
+            data-description="Some exmaple text"
+            data-features=""
+            data-specifications=""
+            data-image="images/seconds-of-sweetness.avif"
+            data-target="#image-gallery">
+              <img src="images/seconds-of-sweetness.avif" class="img-responsive">
+            </a>
+          </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="image-gallery-title"></h4>
+                </div>
+                <div class="modal-body">
+                    <img id="image-gallery-image" class="img-responsive" src="">
+                </div>
+                <div class="modal-footer w3-bar w3-border-bottom">
+                    <div class="w3-bar w3-border-bottom">
+                       <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Description')">Description</button>
+                       <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Features')">Features</button>
+                       <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Specifications')">Specifications</button>
+                      </div>
+
+                      <div id="Description" class="w3-container city leftalign">
+                        <div class="col-md-12 text-justify leftalign" id="image-gallery-description">
+                            This text will be overwritten by jQuery
+                        </div>
+                      </div>
+
+                      <div id="Features" class="w3-container city leftalign">
+                        <div class="col-md-12 text-justify leftalign" id="image-gallery-features">
+                            This text will be overwritten by jQuery
+                        </div>
+                      </div>
+
+                      <div id="Specifications" class="w3-container city leftalign">
+                        <div class="col-md-12 text-justify leftalign" id="image-gallery-specifications">
+                            This text will be overwritten by jQuery
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+      <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img src="images/favicon-32x32.png">
+            </a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="https://swatchcollection.onrender.com/">Home</a></li>
+            <li class="active"><a href="https://swatchcollection.onrender.com/collection">Collection <span class="sr-only">(current)</span></a></li>
+          </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
       </nav>
     </footer>
     <!-- JS Scripts -->
     <!-- jQuery -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <!-- Custom scripts -->
     <script src="scripts.js"></script>
   </body>

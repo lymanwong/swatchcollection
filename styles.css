@@ -32,6 +32,11 @@
 	border-radius: 20%;
 }
 
+.not-allowed {
+  cursor: not-allowed !important;
+  pointer-events: all !important;
+}
+
 /* Ensure carousel appears under navbar */
 .carousel {
   margin-top: -59px; /* Negative margin to pull up under navbar */
@@ -41,6 +46,7 @@
 	z-index: 9999;
 	color: black;
 	background-color: transparent !important;
+	border: none;
 }
 
 /* Gallery */
