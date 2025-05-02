@@ -2,10 +2,10 @@
 .gallery-title
 {
     font-size: 36px;
-    color: #42B32F;
+    color: #9FB3DF;
     text-align: center;
     font-weight: 500;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
 }
 .gallery-title:after {
     content: "";
@@ -15,29 +15,29 @@
     height: 45px;
     border-bottom: 1px solid #5e5e5e;
 }
+
 .filter-button
 {
     font-size: 18px;
-    border: 1px solid #42B32F;
+    border: 1px solid #9EC6F3;
     border-radius: 5px;
     text-align: center;
-    color: #42B32F;
-    margin-bottom: 30px;
-
+    color: #9EC6F3;
+    margin-bottom: 10px;
 }
+
 .filter-button:hover
 {
     font-size: 18px;
-    border: 1px solid #42B32F;
+    border: 1px solid #9EC6F3;
     border-radius: 5px;
     text-align: center;
     color: #ffffff;
-    background-color: #42B32F;
-
+    background-color: #9EC6F3;
 }
 .btn-default:active .filter-button:active
 {
-    background-color: #42B32F;
+    background-color: #9EC6F3 !important;
     color: white;
 }
 
@@ -64,6 +64,11 @@
 .thumb{
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+.a-style {
+    color: #428bca;
+    text-decoration: none;
 }
 
 /* Enable Flexbox for dynamic wrapping */
@@ -94,6 +99,7 @@
   white-space: normal; /* Override any conflicting styles */
 }
 
+/* Footer */
 html {
   position: relative;
   min-height: 100%;
@@ -105,7 +111,6 @@ body {
 
 /* Footer styling */
 .footer {
-
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -119,4 +124,13 @@ body {
 
 .bottom-pad {
     padding-bottom: 60px;
+}
+
+/* Navbar */
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+    background-color: #BDDDE4;
+}
+
+.navbar-default {
+    background-color: #9FB3DF;
 }
