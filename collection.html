@@ -314,27 +314,44 @@
       </div>
     </div>
 
-    <!-- Modal -->
-    <div class="modal-footer w3-bar w3-border-bottom">
-      <div class="w3-bar w3-border-bottom">
-        <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Description')">Description</button>
-        <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Features')">Features</button>
-        <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Specifications')">Specifications</button>
-      </div>
+<!-- Start Modal -->
+    <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">×</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title" id="image-gallery-title"></h4>
+                </div>
+                <div class="modal-body">
+                    <img id="image-gallery-image" class="img-responsive" src="">
+                </div>
+                <div class="modal-footer w3-bar w3-border-bottom">
+                    <div class="w3-bar w3-border-bottom">
+                        <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Description')">Description</button>
+                        <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Features')">Features</button>
+                        <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Specifications')">Specifications</button>
+                    </div>
 
-      <!-- Tab content -->
-      <div id="Description" class="w3-container city leftalign" style="display: block;">
-        <div class="col-md-12 text-justify leftalign" id="image-gallery-description"></div>
-      </div>
+                    <div id="Description" class="w3-container city leftalign">
+                        <div class="col-md-12 text-justify leftalign" id="image-gallery-description"></div>
+                    </div>
 
-      <div id="Features" class="w3-container city leftalign" style="display: none;">
-        <div class="col-md-12 text-justify leftalign" id="image-gallery-features"></div>
-      </div>
+                    <div id="Features" class="w3-container city leftalign">
+                        <div class="col-md-12 text-justify leftalign" id="image-gallery-features"></div>
+                    </div>
 
-      <div id="Specifications" class="w3-container city leftalign" style="display: none;">
-        <div class="col-md-12 text-justify leftalign" id="image-gallery-specifications"></div>
-      </div>
+                    <div id="Specifications" class="w3-container city leftalign">
+                        <div class="col-md-12 text-justify leftalign" id="image-gallery-specifications"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <!-- End Modal -->
+
     <footer class="footer">
       <nav class="navbar navbar-default navbar-fixed-bottom">
         <div class="container-fluid">
@@ -361,6 +378,8 @@
         </div><!-- /.container-fluid -->
       </nav>
     </footer>
+    <!-- End Footer -->
+
     <!-- JS Scripts -->
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
