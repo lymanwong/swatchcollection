@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Marssy's Swatch Collection</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="styles.css"/>
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
@@ -36,151 +36,368 @@
     </nav>
     <!-- End Navbar -->
 
-  <!-- Carousel -->
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="true">
+    <!-- Carousel -->
+    <div id="carouselExampleCaptions" class="carouselHero slide" data-bs-ride="carousel">
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/marssyswatch.jpeg" class="d-block w-100 obfit" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/marssypallela.jpeg" class="d-block w-100 obfit" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/marssybluey.jpeg" class="d-block w-100 obfit" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!-- End Carousel -->
+
+<!-- Latest Additions Carousel Start -->
+<div class="container">
+  <h2 class="titlecenter mb-4">Latest Additions</h2>
+  <div id="latestAdditionsCarousel" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators -->
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#latestAdditionsCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#latestAdditionsCarousel" data-bs-slide-to="1"></button>
     </div>
+
+    <!-- Carousel Inner -->
     <div class="carousel-inner">
+      <!-- Slide 1 -->
       <div class="carousel-item active">
-        <img src="images/marssyswatch.jpeg" class="d-block w-100 obfit" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
+          <!-- Repeat this block for each card (5 per slide) -->
+          <div class="col">
+            <div class="card h-100 invis">
+              <img src="images/how-majestic.avif" class="card-img-top cardimgresize" alt="...">
+              <div class="card-body text-center">
+                <button class="card-title deco not-allowed">New</button>
+                <p class="card-text text-center">Watch Name</p>
+              </div>
+              <div class="card-footer invis text-center">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+          <!-- Add 4 more cards here -->
+          <div class="col">
+            <div class="card h-100 invis">
+              <img src="images/how-majestic.avif" class="card-img-top cardimgresize" alt="...">
+              <div class="card-body text-center">
+                <button class="card-title deco not-allowed">New</button>
+                <p class="card-text text-center">Watch Name</p>
+              </div>
+              <div class="card-footer invis text-center">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 invis">
+              <img src="images/how-majestic.avif" class="card-img-top cardimgresize" alt="...">
+              <div class="card-body text-center">
+                <button class="card-title deco not-allowed">New</button>
+                <p class="card-text text-center">Watch Name</p>
+              </div>
+              <div class="card-footer invis text-center">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 invis">
+              <img src="images/how-majestic.avif" class="card-img-top cardimgresize" alt="...">
+              <div class="card-body text-center">
+                <button class="card-title deco not-allowed">New</button>
+                <p class="card-text text-center">Watch Name</p>
+              </div>
+              <div class="card-footer invis text-center">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 invis">
+              <img src="images/how-majestic.avif" class="card-img-top cardimgresize" alt="...">
+              <div class="card-body text-center">
+                <button class="card-title deco not-allowed">New</button>
+                <p class="card-text text-center">Watch Name</p>
+              </div>
+              <div class="card-footer invis text-center">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="images/marssypallela.jpeg" class="d-block w-100 obfit" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="images/marssybluey.jpeg" class="d-block w-100 obfit" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-<!-- End Carousel -->
 
-<!-- Latest Additions Cards Start -->
-  <div class="container padtop">
-    <h2 class="titlecenter">Latest Additions</h2>
-    <div class="row row-cols-1 row-cols-sm-4 g-4">
-      <div class="col">
-        <div class="card h-100 invis">
-          <img src="images/how-majestic.avif" class="card-img-top cardimgresize" alt="...">
-          <div class="card-body text-center">
-              <button class="card-title deco not-allowed">New</button>
-              <p class="card-text text-center">Watch Name</p>
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
+          <!-- Add 5 more cards here -->
+          <div class="col">
+            <div class="card h-100 invis">
+              <img src="images/its-spooky-time.avif" class="card-img-top cardimgresize" alt="...">
+              <div class="card-body text-center">
+                <button class="card-title deco not-allowed">New</button>
+                <p class="card-text text-center">Watch Name</p>
+              </div>
+              <div class="card-footer invis text-center">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </div>
+            </div>
           </div>
-          <div class="card-footer invis text-center">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          <div class="col">
+            <div class="card h-100 invis">
+              <img src="images/its-spooky-time.avif" class="card-img-top cardimgresize" alt="...">
+              <div class="card-body text-center">
+                <button class="card-title deco not-allowed">New</button>
+                <p class="card-text text-center">Watch Name</p>
+              </div>
+              <div class="card-footer invis text-center">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 invis">
-          <img src="images/how-majestic.avif" class="card-img-top cardimgresize" alt="...">
-          <div class="card-body text-center">
-            <button class="card-title deco not-allowed">New</button>
-            <p class="card-text text-center">Watch Name</p>
+          <div class="col">
+            <div class="card h-100 invis">
+              <img src="images/its-spooky-time.avif" class="card-img-top cardimgresize" alt="...">
+              <div class="card-body text-center">
+                <button class="card-title deco not-allowed">New</button>
+                <p class="card-text text-center">Watch Name</p>
+              </div>
+              <div class="card-footer invis text-center">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </div>
+            </div>
           </div>
-          <div class="card-footer invis text-center">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          <div class="col">
+            <div class="card h-100 invis">
+              <img src="images/its-spooky-time.avif" class="card-img-top cardimgresize" alt="...">
+              <div class="card-body text-center">
+                <button class="card-title deco not-allowed">New</button>
+                <p class="card-text text-center">Watch Name</p>
+              </div>
+              <div class="card-footer invis text-center">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 invis">
-          <img src="images/how-majestic.avif" class="card-img-top cardimgresize" alt="...">
-          <div class="card-body text-center">
-            <button class="card-title deco not-allowed">New</button>
-            <p class="card-text text-center">Watch Name</p>
-          </div>
-          <div class="card-footer invis text-center">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 invis">
-          <img src="images/how-majestic.avif" class="card-img-top cardimgresize" alt="...">
-          <div class="card-body text-center">
-            <button class="card-title deco not-allowed">New</button>
-            <p class="card-text text-center">Watch Name</p>
-          </div>
-          <div class="card-footer invis text-center">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          <div class="col">
+            <div class="card h-100 invis">
+              <img src="images/its-spooky-time.avif" class="card-img-top cardimgresize" alt="...">
+              <div class="card-body text-center">
+                <button class="card-title deco not-allowed">New</button>
+                <p class="card-text text-center">Watch Name</p>
+              </div>
+              <div class="card-footer invis text-center">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    </div>
-  </div>
-<!-- Latest Additions Cards End -->
 
-<!-- Favorite Swatches Cards Start -->
-  <div class="container padtop">
-    <h2 class="titlecenter">Favorite Swatches</h2>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="col">
-        <div class="card h-100 invis">
-          <img src="images/how-majestic.avif" class="card-img-top cardimgresize" alt="...">
-          <div class="card-body">
-            <h5 class="card-title text-center">Watch Name</h5>
-            <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+    <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#latestAdditionsCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#latestAdditionsCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+<!-- Latest Additions Carousel End -->
+
+<!-- Favorite Swatches Carousel Start -->
+<div class="container padtop">
+  <h2 class="titlecenter mb-4">Favorite Swatches</h2>
+  <div id="favoriteSwatchesCarousel" class="carousel slide" data-bs-ride="carousel">
+    <!-- Carousel Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#favoriteSwatchesCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+      <button type="button" data-bs-target="#favoriteSwatchesCarousel" data-bs-slide-to="1"></button>
+    </div>
+
+    <!-- Carousel Inner -->
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
+          <!-- Repeat this block for each card (5 per slide) -->
+          <div class="col">
+            <div class="card h-100 invis">
+              <img src="images/how-majestic.avif" class="card-img-top cardimgresize" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Watch Name</h5>
+              </div>
+              <div class="card-footer invis text-center">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </div>
+            </div>
           </div>
-          <div class="card-footer invis text-center">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          <!-- Add 4 more cards here -->
+          <div class="col">
+            <div class="card h-100 invis">
+              <img src="images/how-majestic.avif" class="card-img-top cardimgresize" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Watch Name</h5>
+              </div>
+              <div class="card-footer invis text-center">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 invis">
+              <img src="images/how-majestic.avif" class="card-img-top cardimgresize" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Watch Name</h5>
+              </div>
+              <div class="card-footer invis text-center">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 invis">
+              <img src="images/how-majestic.avif" class="card-img-top cardimgresize" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Watch Name</h5>
+              </div>
+              <div class="card-footer invis text-center">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 invis">
+              <img src="images/how-majestic.avif" class="card-img-top cardimgresize" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Watch Name</h5>
+              </div>
+              <div class="card-footer invis text-center">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="card h-100 invis">
-          <img src="images/how-majestic.avif" class="card-img-top cardimgresize" alt="...">
-          <div class="card-body">
-            <h5 class="card-title text-center">Watch Name</h5>
-            <!-- <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p> -->
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
+          <!-- Add 5 more cards here -->
+          <div class="col">
+            <div class="card h-100 invis">
+              <img src="images/its-spooky-time.avif" class="card-img-top cardimgresize" alt="...">
+              <div class="card-body text-center">
+                <button class="card-title deco not-allowed">New</button>
+                <p class="card-text text-center">Watch Name</p>
+              </div>
+              <div class="card-footer invis text-center">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </div>
+            </div>
           </div>
-          <div class="card-footer invis text-center">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          <div class="col">
+            <div class="card h-100 invis">
+              <img src="images/its-spooky-time.avif" class="card-img-top cardimgresize" alt="...">
+              <div class="card-body text-center">
+                <button class="card-title deco not-allowed">New</button>
+                <p class="card-text text-center">Watch Name</p>
+              </div>
+              <div class="card-footer invis text-center">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 invis">
-          <img src="images/how-majestic.avif" class="card-img-top cardimgresize" alt="...">
-          <div class="card-body">
-            <h5 class="card-title text-center">Watch Name</h5>
-            <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p> -->
+          <div class="col">
+            <div class="card h-100 invis">
+              <img src="images/its-spooky-time.avif" class="card-img-top cardimgresize" alt="...">
+              <div class="card-body text-center">
+                <button class="card-title deco not-allowed">New</button>
+                <p class="card-text text-center">Watch Name</p>
+              </div>
+              <div class="card-footer invis text-center">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </div>
+            </div>
           </div>
-          <div class="card-footer invis text-center">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          <div class="col">
+            <div class="card h-100 invis">
+              <img src="images/its-spooky-time.avif" class="card-img-top cardimgresize" alt="...">
+              <div class="card-body text-center">
+                <button class="card-title deco not-allowed">New</button>
+                <p class="card-text text-center">Watch Name</p>
+              </div>
+              <div class="card-footer invis text-center">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 invis">
+              <img src="images/its-spooky-time.avif" class="card-img-top cardimgresize" alt="...">
+              <div class="card-body text-center">
+                <button class="card-title deco not-allowed">New</button>
+                <p class="card-text text-center">Watch Name</p>
+              </div>
+              <div class="card-footer invis text-center">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#favoriteSwatchesCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#favoriteSwatchesCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
   </div>
-<!-- Favorite Swatches Cards End -->
+<!-- Favorite Swatches Carousel End -->
 
 <!-- My World Start -->
-  <div class="container padtop">
+  <div class="container">
     <h2 class="titlecenter">My World</h2>
     <div class="row row-cols-1 row-cols-sm-4 g-4">
       <div class="col">
@@ -267,10 +484,10 @@
     </footer>
     <!-- JS Scripts -->
     <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap Bundle (already includes Bootstrap JS) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
-    <!-- Custom scripts -->
+    <!-- Your custom scripts -->
     <script src="scripts.js"></script>
   </body>
 </html>

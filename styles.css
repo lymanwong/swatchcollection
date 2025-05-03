@@ -38,7 +38,7 @@
 }
 
 /* Ensure carousel appears under navbar */
-.carousel {
+.carouselHero {
   margin-top: -59px; /* Negative margin to pull up under navbar */
 }
 
@@ -231,4 +231,163 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.carousel-item {
+  transition: transform 0.6s ease-in-out;
+}
+
+.carousel-inner {
+  overflow: visible;
+}
+
+.carousel-item.active {
+  display: flex;
+}
+
+/* Add to your style.css */
+/* Carousel Controls */
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 9999 !important; /* Force above cards */
+  background: rgba(0, 0, 0, 0.5) !important; /* Darker background */
+  width: 40px;
+  height: 40px;
+  opacity: 1 !important;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  position: relative;
+  top: auto;
+  left: auto;
+  transform: none;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* Carousel Indicators */
+.carousel-indicators [data-bs-target] {
+  background-color: #000;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 6px;
+}
+
+/* Title Spacing */
+.padtop {
+  padding-top: 3rem;
+}
+.titlecenter {
+  position: relative;
+  z-index: 2;
+}
+
+/* Carousel container spacing */
+.container.padtop {
+  margin-bottom: 40px; /* Space between carousels */
+}
+
+/* Title spacing */
+.titlecenter {
+  margin-bottom: 30px !important; /* Space below titles */
+}
+
+/* Carousel indicator positioning */
+.carousel-indicators {
+  z-index: 1;
+}
+
+/* Carousel inner padding */
+.carousel-inner {
+  padding-bottom: 40px; /* Space for indicators */
+}
+
+/* Card z-index */
+.carousel-item .card {
+  position: relative;
+  z-index: auto !important; /* Remove conflicting z-index */
+}
+
+/* Carousel control positioning */
+.carousel-control-prev,
+.carousel-control-next {
+	top: 50%;
+	transform: translateY(-50%);
+	width: 40px;
+	height: 40px;
+	background: rgba(0, 0, 0, 0.7) !important;
+	border-radius: 50%;
+	opacity: 1 !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.city {
+  padding: 15px 0;
+}
+
+.tablink {
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tablink.w3-light-grey {
+  background-color: #e0e0e0 !important;
+}
+
+/* Fix for both carousels */
+#latestAdditionsCarousel,
+#favoriteSwatchesCarousel {
+  position: relative;
+  overflow: visible;
+}
+
+.carousel-control-prev {
+    left: -50px;
+}
+
+.carousel-control-next {
+  right: -50px; /* Move right arrow outside */
+}
+
+/* Add to styles.css */
+/* Hero Carousel Fixes */
+.carouselHero {
+  position: relative;
+  margin-top: -59px;
+}
+
+.carouselHero .carousel-indicators {
+  z-index: 15;
+  margin: 59px;
+}
+
+.carouselHero .carousel-control-prev,
+.carouselHero .carousel-control-next {
+  width: 8%;
+  opacity: 1;
+  z-index: 20;
+  background: transparent !important;
+}
+
+.carouselHero .carousel-control-prev {
+  left: 0;
+  background: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%);
+}
+
+.carouselHero .carousel-control-next {
+  right: 0;
+  background: linear-gradient(270deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%);
+}
+
+.carouselHero .carousel-control-prev-icon,
+.carouselHero .carousel-control-next-icon {
+  filter: invert(1);
+  width: 2.5rem;
+  height: 2.5rem;
 }

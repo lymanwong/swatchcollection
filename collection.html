@@ -184,18 +184,27 @@
             </a>
           </div>
 
-          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter thumb spray">
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter thumb spray SE 2k">
             <a class="thumbnail"
             href="#"
             data-image-id=""
             data-toggle="modal"
-            data-title="This is my title"
-            data-description="Some exmaple text"
-            data-features=""
-            data-specifications=""
-            data-image="images/seconds-of-sweetness.avif"
+            data-title="THE BLESSING SIGN"
+            data-description="<br>
+            Model: Model: <a target='_blank' class='a-style' href='https://www.swatch.com/en-en/the-blessing-sign-gr152/GR152.html'>GR152</a><br>
+            Release date: 2010"
+            data-features="
+            Movement: Quartz
+            Water resistant: 3 Bar
+            Collection Category: YEAR OF THE TIGER
+            Packaging type: Special"
+            data-specifications="
+            Diameter: 33.00 mm
+            Thickness: 8.75 mm
+            Collection Category: YEAR OF THE TIGER"
+            data-image="images/marssyswatch.jpeg"
             data-target="#image-gallery">
-              <img src="images/seconds-of-sweetness.avif" class="img-responsive">
+              <img src="images/marssyswatch.jpeg" class="img-responsive">
             </a>
           </div>
 
@@ -306,43 +315,25 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-                    <h4 class="modal-title" id="image-gallery-title"></h4>
-                </div>
-                <div class="modal-body">
-                    <img id="image-gallery-image" class="img-responsive" src="">
-                </div>
-                <div class="modal-footer w3-bar w3-border-bottom">
-                    <div class="w3-bar w3-border-bottom">
-                       <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Description')">Description</button>
-                       <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Features')">Features</button>
-                       <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Specifications')">Specifications</button>
-                      </div>
+    <div class="modal-footer w3-bar w3-border-bottom">
+      <div class="w3-bar w3-border-bottom">
+        <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Description')">Description</button>
+        <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Features')">Features</button>
+        <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Specifications')">Specifications</button>
+      </div>
 
-                      <div id="Description" class="w3-container city leftalign">
-                        <div class="col-md-12 text-justify leftalign" id="image-gallery-description">
-                            This text will be overwritten by jQuery
-                        </div>
-                      </div>
+      <!-- Tab content -->
+      <div id="Description" class="w3-container city leftalign" style="display: block;">
+        <div class="col-md-12 text-justify leftalign" id="image-gallery-description"></div>
+      </div>
 
-                      <div id="Features" class="w3-container city leftalign">
-                        <div class="col-md-12 text-justify leftalign" id="image-gallery-features">
-                            This text will be overwritten by jQuery
-                        </div>
-                      </div>
+      <div id="Features" class="w3-container city leftalign" style="display: none;">
+        <div class="col-md-12 text-justify leftalign" id="image-gallery-features"></div>
+      </div>
 
-                      <div id="Specifications" class="w3-container city leftalign">
-                        <div class="col-md-12 text-justify leftalign" id="image-gallery-specifications">
-                            This text will be overwritten by jQuery
-                        </div>
-                      </div>
-                </div>
-            </div>
-        </div>
+      <div id="Specifications" class="w3-container city leftalign" style="display: none;">
+        <div class="col-md-12 text-justify leftalign" id="image-gallery-specifications"></div>
+      </div>
     </div>
     <footer class="footer">
       <nav class="navbar navbar-default navbar-fixed-bottom">
@@ -371,11 +362,8 @@
       </nav>
     </footer>
     <!-- JS Scripts -->
-    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <!-- Bootstrap -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <!-- Custom scripts -->
     <script src="scripts.js"></script>
   </body>
 </html>

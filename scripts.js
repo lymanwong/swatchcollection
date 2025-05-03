@@ -1,119 +1,66 @@
+// scripts.js
+$(document).ready(function() {
+  // ========== Filter Functionality ==========
+  $(".filter-button").click(function() {
+    // Remove active class from all buttons
+    $(".filter-button").removeClass("active");
+    // Add active class to clicked button
+    $(this).addClass("active");
 
-$(document).ready(function(){
-
-    $(".filter-button").click(function(){
-        var value = $(this).attr('data-filter');
-
-        if(value == "all")
-        {
-            //$('.filter').removeClass('hidden');
-            $('.filter').show('1000');
-        }
-        else
-        {
-//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
-            $(".filter").not('.'+value).hide('3000');
-            $('.filter').filter('.'+value).show('3000');
-
-        }
-    });
-
-    if ($(".filter-button").removeClass("active")) {
-$(this).removeClass("active");
-}
-$(this).addClass("active");
-
-});
-
-$(document).ready(function(){
-
-    loadGallery(true, 'a.thumbnail');
-
-    //This function disables buttons when needed
-    function disableButtons(counter_max, counter_current){
-        $('#show-previous-image, #show-next-image').show();
-        if(counter_max == counter_current){
-            $('#show-next-image').hide();
-        } else if (counter_current == 1){
-            $('#show-previous-image').hide();
-        }
+    const filterValue = $(this).data('filter');
+    if (filterValue === 'all') {
+      $('.filter').show(1000);
+    } else {
+      $('.filter').hide(1000);
+      $(`.filter.${filterValue}`).show(1000);
     }
+  });
 
-    /**
-     *
-     * @param setIDs        Sets IDs when DOM is loaded. If using a PHP counter, set to false.
-     * @param setClickAttr  Sets the attribute for the click handler.
-     */
+  // ========== Modal Tabs Functionality ==========
+  function handleModalTabs(evt, tabName) {
+    // Get modal context
+    const modal = $('#image-gallery');
 
-    function loadGallery(setIDs, setClickAttr){
-        var current_image,
-            selector,
-            counter = 0;
+    // Remove active class from all tabs
+    modal.find('.tablink').removeClass('w3-light-grey');
+    // Hide all tab content
+    modal.find('.city').hide();
 
-        $('#show-next-image, #show-previous-image').click(function(){
-            if($(this).attr('id') == 'show-previous-image'){
-                current_image--;
-            } else {
-                current_image++;
-            }
-
-            selector = $('[data-image-id="' + current_image + '"]');
-            updateGallery(selector);
-        });
-
-        function updateGallery(selector) {
-            var $sel = selector;
-            current_image = $sel.data('image-id');
-            $('#image-gallery-description').html($sel.data('description'));
-            $('#image-gallery-features').html($sel.data('features'));
-            $('#image-gallery-specifications').html($sel.data('specifications'));
-            $('#image-gallery-title').html($sel.data('title'));
-            $('#image-gallery-image').attr('src', $sel.data('image'));
-            disableButtons(counter, $sel.data('image-id'));
-        }
-
-        if(setIDs == true){
-            $('[data-image-id]').each(function(){
-                counter++;
-                $(this).attr('data-image-id',counter);
-            });
-        }
-        $(setClickAttr).on('click',function(){
-            updateGallery($(this));
-        });
-    }
-});
-
-document.getElementsByClassName("tablink")[0].click();
-
-function openCity(evt, cityName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("city");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+    // Show selected tab and add active class
+    $(`#${tabName}`).show();
+    $(evt.currentTarget).addClass('w3-light-grey');
   }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-    tablinks[i].classList.remove("w3-light-grey");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.classList.add("w3-light-grey");
-}
 
-// When the modal is shown
-$('#image-gallery').on('show.bs.modal', function (event) {
-  const trigger = $(event.relatedTarget); // Clicked thumbnail
-  const title = trigger.data('title');
-  const description = trigger.data('description');
-  const features = trigger.data('features');
-  const specifications = trigger.data('specifications');
+  // ========== Modal Initialization ==========
+  $('#image-gallery').on('show.bs.modal', function(event) {
+    const trigger = $(event.relatedTarget);
+    const modal = $(this);
 
-  // Update modal content
-  $('#image-gallery-title').html(title);
-  $('#image-gallery-description').html(description);
+    // Set main content
+    modal.find('#image-gallery-title').text(trigger.data('title'));
+    modal.find('#image-gallery-image').attr('src', trigger.data('image'));
 
-  // Handle line breaks for features/specifications
-  $('#image-gallery-features').html(features.replace(/\n/g, '<br>'));
-  $('#image-gallery-specifications').html(specifications.replace(/\n/g, '<br>'));
+    // Set tab content
+    modal.find('#image-gallery-description').html(trigger.data('description'));
+    modal.find('#image-gallery-features').html(trigger.data('features'));
+    modal.find('#image-gallery-specifications').html(trigger.data('specifications'));
+
+    // Initialize first tab
+    modal.find('.city').hide();
+    modal.find('#Description').show();
+    modal.find('.tablink').first().addClass('w3-light-grey');
+  });
+
+  // ========== Tab Click Handlers ==========
+  $(document).on('click', '.tablink', function(e) {
+    e.preventDefault();
+    const tabName = $(this).attr('onclick').match(/'([^']+)'/)[1];
+    handleModalTabs(e, tabName);
+  });
+
+  // ========== Cleanup on Modal Close ==========
+  $('#image-gallery').on('hidden.bs.modal', function() {
+    $(this).find('.tablink').removeClass('w3-light-grey');
+    $(this).find('.city').hide();
+  });
 });
