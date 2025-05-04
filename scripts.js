@@ -64,3 +64,16 @@ $(document).ready(function() {
     $(this).find('.city').hide();
   });
 });
+
+$(document).ready(function() {
+  // Enable touch swiping for carousels
+  $('.carousel').swipe({
+    swipeLeft: function() {
+      $(this).carousel('next');
+    },
+    swipeRight: function() {
+      $(this).carousel('prev');
+    },
+    allowPageScroll: 'vertical'
+  });
+});

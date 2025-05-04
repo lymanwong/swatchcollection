@@ -139,6 +139,14 @@
     text-decoration: none;
 }
 
+.modal-header {
+border-bottom: none;
+}
+
+.modal-footer {
+	border-top: none;
+}
+
 /* Enable Flexbox for dynamic wrapping */
 .flex-row {
   display: flex;
@@ -337,7 +345,7 @@ body {
 }
 
 .tablink.w3-light-grey {
-  background-color: #e0e0e0 !important;
+  background-color: #FFF1D5 !important;
 }
 
 /* Fix for both carousels */
