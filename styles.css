@@ -404,3 +404,16 @@ body {
   width: 2.5rem;
   height: 2.5rem;
 }
+
+@media(width <= 575px) {
+  body {
+    margin-right: -50px;
+  }
+  .cardimgresize {
+    object-fit: contain;
+    height: 12em;
+  }
+  .obfit {
+    height: 500px;
+  }
+}
