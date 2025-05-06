@@ -43,7 +43,7 @@
 }
 
 .navbar {
-	z-index: 9999;
+	z-index: 9;
 	color: black;
 	background-color: transparent !important;
 	border: none;
@@ -71,7 +71,7 @@
 {
     font-size: 18px;
     border: 1px solid #9EC6F3;
-    border-radius: 5px;
+    border-radius: 50px;
     text-align: center;
     color: #9EC6F3;
     margin-bottom: 10px;
@@ -81,7 +81,7 @@
 {
     font-size: 18px;
     border: 1px solid #9EC6F3;
-    border-radius: 5px;
+    border-radius: 55px;
     text-align: center;
     color: #ffffff;
     background-color: #9EC6F3;
@@ -90,6 +90,12 @@
 {
     background-color: #9EC6F3 !important;
     color: white;
+}
+
+.btn-default.active {
+  color: #9EC6F3;
+  background-color: #FFF1D5;
+  border-color: #9EC6F3;
 }
 
 .port-image
@@ -407,7 +413,7 @@ body {
 
 @media(width <= 575px) {
   body {
-    margin-right: -50px;
+/*     margin-right: -12px; */
   }
   .cardimgresize {
     object-fit: contain;
@@ -415,5 +421,26 @@ body {
   }
   .obfit {
     height: 500px;
+  }
+  .navbar {
+    margin-right: 12px;
+  }
+
+  footer {
+/*     margin-right: 12px; */
+  }
+  .carousel-control-prev {
+      left: 0px;
+  }
+
+  .carousel-control-next {
+    right: 0px; /* Move right arrow outside */
+  }
+
+  /* Add to styles.css */
+  /* Hero Carousel Fixes */
+  .carouselHero {
+    position: relative;
+    margin-top: 0px;
   }
 }
